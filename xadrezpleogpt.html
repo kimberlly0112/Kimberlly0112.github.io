@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabuleiro de Xadrez</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+
+  .tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+  }
+
+  .casa {
+    width: 50px;
+    height: 50px;
+  }
+
+  .casa-escura {
+    background-color: #000000;
+  }
+
+  .casa-clara {
+    background-color: #eeeed2;
+  }
+</style>
+</head>
+<body>
+  <div class="tabuleiro">
+    <!-- Linhas do tabuleiro -->
+    <!-- Casas escuras e claras são alternadas -->
+    <!-- As peças de xadrez podem ser adicionadas dentro das casas -->
+    <!-- Exemplo: <div class="casa casa-escura">Peça</div> -->
+    <!-- Ou pode ser usado apenas para visualização do tabuleiro -->
+    <!-- As classes casa-escura e casa-clara são usadas apenas para estilização -->
+    <!-- As classes casa e tabuleiro são opcionais e podem ser renomeadas se necessário -->
+    <!-- Cada casa tem um ID único para identificação -->
+    <!-- Os IDs seguem o padrão "linha-coluna" (ex: a1, a2, b1, b2, etc.) -->
+    <!-- Cada casa também possui um evento de clique associado -->
+    <!-- Este exemplo de evento de clique exibe o ID da casa no console -->
+    <!-- Você pode substituir pelo comportamento desejado -->
+    <!-- Exemplo: <div class="casa casa-escura" id="a1" onclick="clicarCasa('a1')">Peça</div> -->
+    <!-- O JavaScript pode ser adicionado no final do corpo do documento -->
+    <!-- O exemplo de evento de clique em JavaScript está incluído abaixo -->
+    <!-- Caso não deseje adicionar comportamento de clique, você pode remover os eventos de clique -->
+    <!-- Lembre-se de atualizar os eventos de clique e a função associada se estiverem sendo usados -->
+    <!-- Se você deseja apenas o tabuleiro visual, pode remover os IDs e os eventos de clique -->
+    <!-- Também pode renomear as classes e IDs conforme necessário -->
+    <!-- Esta é apenas uma estrutura básica para o tabuleiro de xadrez -->
+
+    <!-- Linha 1 -->
+    <div class="casa casa-escura" id="a1" onclick="clicarCasa('a1')"></div>
+    <div class="casa casa-clara" id="b1" onclick="clicarCasa('b1')"></div>
+    <div class="casa casa-escura" id="c1" onclick="clicarCasa('c1')"></div>
+    <div class="casa casa-clara" id="d1" onclick="clicarCasa('d1')"></div>
+    <div class="casa casa-escura" id="e1" onclick="clicarCasa('e1')"></div>
+    <div class="casa casa-clara" id="f1" onclick="clicarCasa('f1')"></div>
+    <div class="casa casa-escura" id="g1" onclick="clicarCasa('g1')"></div>
+    <div class="casa casa-clara" id="h1" onclick="clicarCasa('h1')"></div>
+
+    <!-- Linha 2 -->
+    <div class="casa casa-clara" id="a2" onclick="clicarCasa('a2')"></div>
+    <div class="casa casa-escura" id="b2" onclick="clicarCasa('b2')"></div>
+    <div class="casa casa-clara" id="c2" onclick="clicarCasa('c2')"></div>
+    <div class="casa casa-escura" id="d2" onclick="clicarCasa('d2')"></div>
+    <div class="casa casa-clara" id="e2" onclick="clicarCasa('e2')"></div>
+    <div class="casa casa-escura" id="f2" onclick="clicarCasa('f2')"></div>
+    <div class="casa casa-clara" id="g2" onclick="clicarCasa('g2')"></div>
+    <div class="casa casa-escura" id="h2" onclick="clicarCasa('h2')"></div>
+    <!-- Linha 3 -->
+    <div class="casa casa-escura" id="a1" onclick="clicarCasa('a1')"></div>
+    <div class="casa casa-clara" id="b1" onclick="clicarCasa('b1')"></div>
+    <div class="casa casa-escura" id="c1" onclick="clicarCasa('c1')"></div>
+    <div class="casa casa-clara" id="d1" onclick="clicarCasa('d1')"></div>
+    <div class="casa casa-escura" id="e1" onclick="clicarCasa('e1')"></div>
+    <div class="casa casa-clara" id="f1" onclick="clicarCasa('f1')"></div>
+    <div class="casa casa-escura" id="g1" onclick="clicarCasa('g1')"></div>
+    <div class="casa casa-clara" id="h1" onclick="clicarCasa('h1')"></div>
+
+    <!-- Linha  4 -->
+    <div class="casa casa-clara" id="a2" onclick="clicarCasa('a2')"></div>
+    <div class="casa casa-escura" id="b2" onclick="clicarCasa('b2')"></div>
+    <div class="casa casa-clara" id="c2" onclick="clicarCasa('c2')"></div>
+    <div class="casa casa-escura" id="d2" onclick="clicarCasa('d2')"></div>
+    <div class="casa casa-clara" id="e2" onclick="clicarCasa('e2')"></div>
+    <div class="casa casa-escura" id="f2" onclick="clicarCasa('f2')"></div>
+    <div class="casa casa-clara" id="g2" onclick="clicarCasa('g2')"></div>
+    <div class="casa casa-escura" id="h2" onclick="clicarCasa('h2')"></div>
+     <!-- Linha 5 -->
+     <div class="casa casa-escura" id="a1" onclick="clicarCasa('a1')"></div>
+     <div class="casa casa-clara" id="b1" onclick="clicarCasa('b1')"></div>
+     <div class="casa casa-escura" id="c1" onclick="clicarCasa('c1')"></div>
+     <div class="casa casa-clara" id="d1" onclick="clicarCasa('d1')"></div>
+     <div class="casa casa-escura" id="e1" onclick="clicarCasa('e1')"></div>
+     <div class="casa casa-clara" id="f1" onclick="clicarCasa('f1')"></div>
+     <div class="casa casa-escura" id="g1" onclick="clicarCasa('g1')"></div>
+     <div class="casa casa-clara" id="h1" onclick="clicarCasa('h1')"></div>
+ 
+     <!-- Linha 6 -->
+     <div class="casa casa-clara" id="a2" onclick="clicarCasa('a2')"></div>
+     <div class="casa casa-escura" id="b2" onclick="clicarCasa('b2')"></div>
+     <div class="casa casa-clara" id="c2" onclick="clicarCasa('c2')"></div>
+     <div class="casa casa-escura" id="d2" onclick="clicarCasa('d2')"></div>
+     <div class="casa casa-clara" id="e2" onclick="clicarCasa('e2')"></div>
+     <div class="casa casa-escura" id="f2" onclick="clicarCasa('f2')"></div>
+     <div class="casa casa-clara" id="g2" onclick="clicarCasa('g2')"></div>
+     <div class="casa casa-escura" id="h2" onclick="clicarCasa('h2')"></div>
+
+     <!-- Linha 7 -->
+
+     <div class="casa casa-escura" id="a1" onclick="clicarCasa('a1')"></div>
+     <div class="casa casa-clara" id="b1" onclick="clicarCasa('b1')"></div>
+     <div class="casa casa-escura" id="c1" onclick="clicarCasa('c1')"></div>
+     <div class="casa casa-clara" id="d1" onclick="clicarCasa('d1')"></div>
+     <div class="casa casa-escura" id="e1" onclick="clicarCasa('e1')"></div>
+     <div class="casa casa-clara" id="f1" onclick="clicarCasa('f1')"></div>
+     <div class="casa casa-escura" id="g1" onclick="clicarCasa('g1')"></div>
+     <div class="casa casa-clara" id="h1" onclick="clicarCasa('h1')"></div>
+ 
+     <!-- Linha  8 -->
+     <div class="casa casa-clara" id="a2" onclick="clicarCasa('a2')"></div>
+     <div class="casa casa-escura" id="b2" onclick="clicarCasa('b2')"></div>
+     <div class="casa casa-clara" id="c2" onclick="clicarCasa('c2')"></div>
+     <div class="casa casa-escura" id="d2" onclick="clicarCasa('d2')"></div>
+     <div class="casa casa-clara" id="e2" onclick="clicarCasa('e2')"></div>
+     <div class="casa casa-escura" id="f2" onclick="clicarCasa('f2')"></div>
+     <div class="casa casa-clara" id="g2" onclick="clicarCasa('g2')"></div>
+     <div class="casa casa-escura" id="h2" onclick="clicarCasa('h2')"></div>
+
+
+    <!-- Outras linhas seguem o mesmo padrão -->
+
+  </div>
+
+  <!-- JavaScript para tratar eventos de clique nas casas -->
+  <script>
+    function clicarCasa(id) {
+      console.log("Clicou na casa: " + id);
+      // Aqui você pode adicionar o comportamento desejado ao clicar em uma casa
+    }
+  </script>
+</body>
+</html>
